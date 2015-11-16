@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/edt_display_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/search_bar_icon_normal"               
+                android:hint="搜索"              
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColorHint="#b3b3b3"
+                android:textSize="16sp" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/imgbtn_disply_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:padding="6dp"
+                android:src="@drawable/search_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ToggleButton
+            android:id="@+id/toggle_display_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/tv_display_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/map_locate"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="正在定位中..."
+            android:textColor="#555"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/reloactionProgress"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rog_display_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbo_display_secondhand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_secondhand"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="二手"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_furniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_furniture"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="家具"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_electronic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_electronic"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="电子"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_pet"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="宠物"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_rent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="租房"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/display_day"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="日常"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbo_display_greens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/diaplay_greens"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="菜场"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+
+    <ListView
+        android:id="@+id/lv_display_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"  />
+
+    <GridView
+        android:id="@+id/gv_display_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="2"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" 
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

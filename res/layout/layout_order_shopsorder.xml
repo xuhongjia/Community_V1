@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgout_shopsorder_rgout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"      
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbt_shoporder_paid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@drawable/circle_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+
+        <RadioButton
+            android:id="@+id/rbt_shoporder_deliver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:button="@null"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@drawable/circle_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+
+        <RadioButton
+            android:id="@+id/rbt_shoporder_receipt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:button="@null"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@drawable/circle_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+
+        <RadioButton
+            android:id="@+id/rbt_shoporder_completed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:button="@null"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@drawable/circle_text_color" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_business_shopsorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

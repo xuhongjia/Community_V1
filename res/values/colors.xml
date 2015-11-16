@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radio_nor">#F4F4F4</color>
+    <color name="radio_check">#3399CC</color>
+    <color name="radio_nor_text">#000000</color>
+    <color name="radio_check_text">#D73200</color>
+
+    <color name="nextpressed">#2D93C2</color>
+    <color name="next">#3298CB</color>
+    <color name="circle_nor">#B0AFB1</color>
+    <color name="circle_selector">#FDC468</color>
+    <color name="btn_search_pressed">#CCCCCC</color>
+    <color name="btn_search_normal">#0000</color>
+    <color name="tv_smalltext_grey">#999999</color>
+    <color name="add_goods_on">#FF6C0C</color>
+    <color name="add_goods_off">#FC8B09</color>
+    <color name="tv_red">#CC6666</color>
+    
+    <color name="secondhand_checked">#53A9D4</color>
+    <color name="secondhand_normal">#000</color>
+    
+    
+    <color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="no_color">#00000000</color>
+    
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+</resources>

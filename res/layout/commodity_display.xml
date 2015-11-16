@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/tv_display_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/map_locate_new"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="正在定位中..."
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/edt_display_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:src="@drawable/search16" />
+    </LinearLayout>
+
+    <cn.andrewlu.community.widget.GoodsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/gridLayout"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="4" >
+
+                    <Button
+                        android:id="@+id/rbo_display_secondhand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/car48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="二手"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/rbo_display_furniture"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/chair48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="家具"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/rbo_display_electronic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/mobile48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="电子"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/rbo_display_pet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/pet48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="宠物"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="4" >
+
+                    <Button
+                        android:id="@+id/rbo_display_rent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:button="@null"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/apartment48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="租房"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/rbo_display_day"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/bag48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="日常"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/rbo_display_greens"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/food48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="菜场"
+                        android:textSize="12sp" />
+                    
+                     <Button
+                        android:id="@+id/rbo_display_tool"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/canoe48"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="器材"
+                        android:textSize="12sp" />
+                     
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"               
+                android:orientation="vertical"
+                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <LinearLayout 
+                    android:layout_width="match_parent"                    
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/subItemLayout"
+                    android:layout_height="40dp"
+                    android:weightSum="2">
+                    <TextView 
+                        android:id="@+id/tvSort"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_height="wrap_content"
+                        android:text="排序"
+                        android:gravity="center"
+                        />
+                    <View android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="#EBEBEB"/>
+                    <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="商家"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+                    
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="0.2dp"
+                      android:background="#EBEBEB"/>
+                
+                       <cn.andrewlu.community.widget.AllGoodsListView
+				        android:id="@+id/lv_display_list"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:scrollbars="none"
+				        android:listSelector="@android:color/transparent"  />
+               
+             
+            </LinearLayout>
+        </LinearLayout>
+    </cn.andrewlu.community.widget.GoodsScrollView>
+
+</LinearLayout>

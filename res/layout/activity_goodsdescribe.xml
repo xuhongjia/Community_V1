@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goodsdescribe_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/drawable_arrow_selector" />
+
+        <TextView
+            android:id="@+id/goodsdescribe_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="宝贝描述"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        
+        
+        <EditText 
+            android:id="@+id/goodsdescribe_describe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:layout_margin="10dp"
+            android:hint="添加文字让你的宝贝看起来更诱人"
+            android:background="@null"
+            android:textSize="16sp"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+    
+	        <Button
+            android:id="@+id/goodsdescribe_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="确定"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#FF6C0C"/>
+	    
+	</LinearLayout>
+
+</LinearLayout>

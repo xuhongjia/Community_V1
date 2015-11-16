@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center">
+<ImageView
+    android:id="@+id/img_display_goods"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/display"
+    />
+    <TextView
+        android:id="@+id/gv_display_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="金色iphone6s正品行货"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+     />
+     <TextView
+            android:id="@+id/gv_display_price"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:text="300元"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#aa1111"
+
+            />
+   
+         <TextView
+            android:id="@+id/gv_display_time"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="10-1"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/display_time"
+            android:drawablePadding="5dp"
+            />
+</LinearLayout>

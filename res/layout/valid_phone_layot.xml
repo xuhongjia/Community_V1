@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#efefef"
+    android:orientation="vertical" >
+    
+ <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#3399CC"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/valid_phone_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/drawable_arrow_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/valid_phone_title"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+              <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/qq" />
+              <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/chain" />
+                <ImageView
+                android:layout_width="50dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/community_64px" />
+              
+        </LinearLayout>
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:drawableRight="@drawable/login_user" />
+
+                <EditText
+                    android:id="@+id/valid_phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:textColor="#222"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/inc_divider" />
+			 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+        		<Button
+            android:id="@+id/valid_new_user"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login_selector"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="新用戶"
+            android:textSize="15sp" />
+        			<Button
+            android:id="@+id/valid_old_user"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login_selector"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="老用戶"
+            android:textSize="15sp" />
+            </LinearLayout>
+</LinearLayout>

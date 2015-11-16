@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#3399CC" >
+
+    <ImageView
+        android:id="@+id/back_findpw"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/title_findpw"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="密码找回"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/password_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

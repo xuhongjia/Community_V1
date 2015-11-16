@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal" 
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_list_commodity"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/display" 
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_display_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="金色iphone6,正品行货。"
+            android:textSize="15sp"
+            />
+
+       	
+        <TextView
+            android:id="@+id/tv_display_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time16"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="5dp"
+            android:text="7-12"
+            android:textSize="13sp" />
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" 
+            android:orientation="horizontal">
+    <TextView
+            android:id="@+id/tv_display_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300元"
+            android:textColor="#D73200"
+            android:textSize="15sp" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="1888人购买"
+            android:textColor="#D73200"
+            android:textSize="10sp" />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

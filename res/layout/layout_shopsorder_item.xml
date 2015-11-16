@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tv_shopersorder_account"
+            style="@style/tv_shopsorder_small"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/label_order_chart4"
+            android:text="pangrihui"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_shopersorder_order_num"
+            style="@style/tv_shopsorder_small"
+            android:layout_centerInParent="true"
+            android:text="订单编号 ： 201224133227"
+            android:textColor="@color/tv_smalltext_grey" />
+
+        <TextView
+            android:id="@+id/tv_shopersorder_state"
+            style="@style/tv_shopsorder_small"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="未发货"
+            android:textColor="@color/tv_red"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_dividing_line" />
+
+    <cn.andrewlu.community.ui.goods.ChildListViewOrderGoods
+        android:id="@+id/lv_shopersorder_childitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:listSelector="@color/btn_search_normal"
+        android:scrollbars="none" />
+
+    <include layout="@layout/view_dividing_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="40dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_shopersoder_deliver "
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_order_evaluation"
+            android:gravity="center"
+            android:text="发货"
+            android:textColor="@color/tv_red"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tv_shopsorder_big"
+                android:text="商品数量："
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_shopersorder_num"
+                style="@style/tv_shopsorder_big"
+                android:text="1" />
+
+            <TextView
+                style="@style/tv_shopsorder_big"
+                android:layout_marginLeft="20dp"
+                android:text="实付： "
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_shopersorder_totalPrice"
+                style="@style/tv_shopsorder_big"
+                android:text="￥99.00" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efefef" >
+    </View>
+
+</LinearLayout>

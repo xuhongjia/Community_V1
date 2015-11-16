@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <include layout="@layout/inc_titlebar_back_nonext" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="选择付款方式" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/alipay_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/alipay_48x48" />
+
+        <TextView
+            android:id="@+id/alipayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/alipay_logo"
+            android:text="支付宝"
+            android:textColor="#222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/alipaySecondTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alipayTextView"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/alipay_logo"
+            android:text="推荐支付宝用户使用"
+            android:textColor="#555"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/selectAliPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/icn_checkbox_seletor"
+            android:checked="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/payBtn"
+        style="@style/RoundCornerButtonStyle"
+        android:text="确认支付" />
+
+</LinearLayout>

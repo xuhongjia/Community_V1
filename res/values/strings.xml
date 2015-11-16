@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="update_now">立即更新</string>
+    <string name="later">稍后</string>
+    <string name="app_name">杂货铺子</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spin_sex"> 请选择性别 </string>
+
+    <string-array name="sex">
+        <item> 男 </item>
+        <item> 女 </item>
+    </string-array>
+
+    <string name="community_msg">消息</string>
+    <string name="community_contact">联系人</string>
+    <string name="community_circle">圈子</string>
+    <string name="valid_phone_title">验证电话</string>
+    <string name="no_data">没有找到符合条件的房源</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish"><u>完成</u></string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album"><u>返回</u></string>
+    <string name="preview"><u>预览</u></string>
+    <string name="unfinished"><u>完成</u></string> 
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    
+    	<!-- 发朋友圈下划线 -->
+	<string name="cancel"><u>取消</u></string>
+	<string name="send"><u>发送</u></string>
+	<string name="back"><u>相册</u></string>
+</resources>

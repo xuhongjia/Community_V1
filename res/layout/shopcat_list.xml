@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:alpha="1"
+    android:id="@+id/shopCatlayout"
+    
+    android:background="#ffffff" >
+    
+	<ListView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:id="@+id/list">
+	    
+	</ListView>
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#4f4f4f"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/clearShopCat"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:gravity="clip_vertical"
+            android:text="清空购物车"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/clear_shop_cat"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+	
+</LinearLayout>

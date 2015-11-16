@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.andrewlu.community"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 下面是高德地图新加入的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- HY 融云 -->
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="cn.andrewlu.community.App"
+        android:allowBackup="true"
+        android:icon="@drawable/community_64px"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 高德地图配置 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="804209573b769d3448446b0d4fd0b336" />
+
+        <activity
+            android:name="cn.andrewlu.community.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.rongyun.CommentFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.andrewlu.community.ui.user.PrivacySetting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- moments -->
+        <activity
+            android:name="cn.andrewlu.community.ui.moments.ActivityMomentWrite"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.moments.AlbumActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.moments.ImageFile" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.moments.ShowAllPhoto" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.moments.GalleryActivity">
+        </activity>
+        <!-- moments -->
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityShoppingCart" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.ActivityFindPswd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.ActivityLogin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.ActivityRegister"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.ActivityInfocomplete"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.collection.ActivityMyCollection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.collection.ActivityMyCollectionDelete"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivitySearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.andrewlu.community.ui.user.AgeSetting"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.AddressSetting"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.widget.ImageDetial" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityMyGoods"
+            android:screenOrientation="portrait" >
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="image/*" />
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityPhotoChoose"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivitySelectCategory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityExtraGoods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityGoodsDescription"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivitySecondhand" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityFurniture" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityEletronic" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityPet" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityRent" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityDay" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityServiceHall"
+             android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.goods.ActivityGreens" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityReleaseGoods"
+             >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityMyGoodsEdit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.ActivityOrderMananger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="cn.andrewlu.community.ui.user.AddressMapPonit" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.BuyersOrderEvaluation"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="cn.andrewlu.community.ui.goods.OrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- HY 融云 -->
+        <!-- begin imlib request -->
+
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPCall"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPAccept"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.app.photo.ChoosePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.app.map.ChooseLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="0vnjpoadnff6z" />
+        <!-- end -->
+
+
+        <!-- 会话窗口 -->
+        <activity
+            android:name="cn.andrewlu.community.ui.rongyun.ConversationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="cn.andrewlu.community"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" >
+                </data>
+            </intent-filter>
+        </activity>
+        <!-- 商品详情页 HY -->
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.Commoditydetail"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.ValidPhone"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.CompleteUser"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.andrewlu.community.ui.user.FinishUser"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104865852" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+        <activity
+            android:name="cn.andrewlu.community.ui.goods.PaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- ###################添加UmengAppkey###################### -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55f921cae0f55ae4610022cf" >
+        </meta-data>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

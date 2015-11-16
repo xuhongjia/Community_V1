@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/day_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/drawable_arrow_selector" />
+
+        <TextView
+            android:id="@+id/day_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="日常"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#efefef">
+        
+    <cn.andrewlu.community.ui.goods.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#000" 
+        />
+    
+   		 <ListView 
+		    android:id="@+id/secondhand_listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		    
+		</ListView>
+    
+    </LinearLayout>
+    
+</LinearLayout>

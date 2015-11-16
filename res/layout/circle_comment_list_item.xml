@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circle_comment_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp" >
+
+    <TextView
+        android:id="@+id/comment_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论者"
+        android:textColor="#4688CD"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/comment_isReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复 "
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/comment_to_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论者"
+        android:textColor="#4688CD"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="："
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论内容asdasdasdasdasdasdasdasdasd"
+        android:textSize="14sp" />
+
+</LinearLayout>

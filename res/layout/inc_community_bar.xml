@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/community_rbtnGrounp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtnMsg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="@string/community_msg"
+            android:textColor="@drawable/circle_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+
+        <RadioButton
+            android:id="@+id/rbtnContact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="@string/community_contact"
+            android:textColor="@drawable/circle_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+
+        <RadioButton
+            android:id="@+id/rbtnMoment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/circle_line_color"
+            android:gravity="center"
+            android:text="@string/community_circle"
+            android:textColor="@drawable/circle_text_color" />
+    </RadioGroup>
+
+</LinearLayout>

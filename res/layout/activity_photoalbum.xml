@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/addgoods_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/drawable_arrow_selector" />
+
+        <TextView
+            android:id="@+id/addgoods_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选择相册"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+<GridView  
+        android:id="@+id/album_gridview"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center"  
+        android:horizontalSpacing="2dp"  
+        android:numColumns="2"  
+        android:verticalSpacing="2dp" 
+        android:scrollbars="none"/> 
+
+</LinearLayout>

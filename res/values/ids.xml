@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HY -->
+<resources>
+    <item type="id" name="rbtnMsg"/>
+    <item type="id" name="rbtnMoment"/><!-- 社区单选按钮 -->
+    <item type="id" name="community_rbtnGrounp"/>
+    <item type="id" name="Rongyun_conversationList"/>
+    <item type="id" name="Rongyun_conversation"/>
+    <item type="id" name="Comments_conversationList"/>
+    <item type="id" name="Comments_conversation"/>
+    <item type="id" name="Comments_ViewPager"/>
+    <item type="id" name="comment_friend_list"/>
+    <item type="id" name="comment_friend_list_image"/>
+    <item type="id" name="comment_friend_list_name"/>
+    <item type="id" name="comment_friend_list_Layout"/>
+</resources>

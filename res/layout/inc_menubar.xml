@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_bar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/tab_bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <cn.andrewlu.community.widget.TipRadioButton
+        android:id="@+id/tab_shops"
+        style="@style/MenuButtonTheme"
+        android:checked="true"
+        android:drawableTop="@drawable/icn_store_tab_selector_btn"
+        android:text="杂货铺" />
+
+    <cn.andrewlu.community.widget.TipRadioButton
+        android:id="@+id/tab_sale"
+        style="@style/MenuButtonTheme"
+        android:drawableTop="@drawable/icn_sale_tab_selector_btn"
+        android:text="买卖" />
+
+    <cn.andrewlu.community.widget.TipRadioButton
+        android:id="@+id/tab_comments"
+        style="@style/MenuButtonTheme"
+        android:drawableTop="@drawable/icn_community_tab_selector_btn"
+        android:text="社区" />
+
+    <cn.andrewlu.community.widget.TipRadioButton
+        android:id="@+id/tab_personal"
+        style="@style/MenuButtonTheme"
+        android:drawableTop="@drawable/icn_me_tab_selector_btn"
+        android:text="我" />
+
+</RadioGroup>

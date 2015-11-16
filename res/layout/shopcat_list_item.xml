@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="6" >
+
+    <TextView
+        android:id="@+id/goodsTitle"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="鸡翅" />
+
+    <TextView
+        android:id="@+id/goodsMoney"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textColor="#aa0000"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="￥20" />
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:gravity="center"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2"
+	    android:orientation="horizontal">
+	     <ImageButton 
+	         android:id="@+id/deleteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/miu_goods_24px"
+        />
+    <TextView
+        android:id="@+id/goodsCount"
+        android:textColor="#11aa11"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+	<ImageButton 
+	    android:id="@+id/addCount"
+        android:layout_width="wrap_content"
+       	android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_goods_24px"
+        />
+	</LinearLayout>
+   
+</LinearLayout>

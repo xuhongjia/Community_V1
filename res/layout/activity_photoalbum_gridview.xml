@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#3399CC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/addgoods_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/drawable_arrow_selector" />
+
+        <TextView
+            android:id="@+id/addgoods_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选择相片"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+   <RelativeLayout
+        android:id="@+id/rl_shuju"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        >
+    <GridView
+            android:id="@+id/photo_gridview"  
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:listSelector="#50000000"
+            android:numColumns="3"
+            android:scrollbars="none" 
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp" 
+            android:layout_margin="5dp"
+            /> 
+        <RelativeLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/btn_sure"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <cn.andrewlu.community.entity.MyGridView
+                        android:id="@+id/gl_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" 
+                         />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="#3399CC"
+                android:text="确定"
+                android:textColor="#fff"
+                android:textSize="14sp" 
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+ </RelativeLayout>
+ </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <include layout="@layout/inc_titlebar_back_nonext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_privacySetting_textview"
+                android:layout_alignParentLeft="true"
+                android:text="显示个人信息" />
+
+            <CheckBox
+                android:id="@+id/cbox_privacySetting_personalIfo"
+                style="@style/checkbox_privacySetting_switch" />
+        </RelativeLayout>
+
+        <include layout="@layout/inc_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_privacySetting_textview"
+                android:text="允许通过社交圈加好友" />
+
+            <CheckBox
+                android:id="@+id/cbox_privacySetting_addFriend"
+                style="@style/checkbox_privacySetting_switch" />
+        </RelativeLayout>
+
+        <include layout="@layout/inc_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_privacySetting_textview"
+                android:text="显示门牌号" />
+
+            <CheckBox
+                android:id="@+id/cbox_privacySetting_doorplate"
+                style="@style/checkbox_privacySetting_switch" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

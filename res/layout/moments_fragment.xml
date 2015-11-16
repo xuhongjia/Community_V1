@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.andrewlu.community.utils.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_circle_moments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#0000"
+            android:scrollbars="none" >
+        </ListView>
+    </cn.andrewlu.community.utils.RefreshableView>
+
+    <LinearLayout
+        android:id="@+id/comments_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/comments_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/comments_edit_shape"
+            android:focusable="true"
+            android:hint="评论"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/comments_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/comments_btn_selector"
+            android:text="发送"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

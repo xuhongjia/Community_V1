@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp" 
+    android:layout_weight="1">
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:layout_gravity="center"
+        />
+    <TextView android:id="@+id/address_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:padding="5dp"
+        android:background="@drawable/rectangle_pressed"
+        />
+</FrameLayout>
+<Button
+        android:id="@+id/address_sure"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#6699ff"
+        android:padding="10dp"
+        android:text="确            认"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_gravity="bottom" />
+</LinearLayout>

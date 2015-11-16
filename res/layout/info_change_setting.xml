@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#ededed">
+
+    <include layout="@layout/inc_titlebar_back_findpw" />
+
+    <EditText
+        android:id="@+id/change_edit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="20dp"
+        android:background="#33f799aa" />
+
+    <LinearLayout
+        android:id="@+id/location_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:background="@drawable/textview_selector"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="当前定位:"
+            android:gravity="center"/>
+        
+        <TextView
+            android:id="@+id/location_address_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="正在定位..."
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/map_point"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_selector"
+        android:layout_marginTop="1dp"
+        android:text="地图选点"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+</LinearLayout>
